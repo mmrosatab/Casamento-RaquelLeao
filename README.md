@@ -1,2 +1,5 @@
 # Casamento-RaquelLeao
-Website para divulgação do casamento de Raquel Leão
+
+Este repositório se destina ao desenvolvimento do site de divulgação do casamento de Raquel Leão. Para o desenvolvimento do site foram utilizadas as tecnologias html, css e js, além do uso da biblioteca Bootstrap na versão 4.
+
+
