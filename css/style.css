@@ -1,180 +1,135 @@
 /* general */
-body
-{
-	margin: 0 !important;
-	padding: 0 !important;
-    background-color: #f1f1f1 !important;
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #f1f1f1 !important;
 }
 
-a
-{
-    text-decoration: none !important;
+a {
+  text-decoration: none !important;
 }
 
-
-header, h1, h5, h2, h3
-{
-    /*font-family: 'Baloo Chettan',cursive, sans-serif;*/
-    font-family: 'Kaushan Script', cursive, sans-serif !important;
+header,
+h1,
+h5,
+h2,
+h3 {
+  /*font-family: 'Baloo Chettan',cursive, sans-serif;*/
+  font-family: "Kaushan Script", cursive, sans-serif !important;
 }
 
-header 
-{
-    color: white !important;
-    background-color: #333 !important;
-}
- 
-header a:hover 
-{
-    color: white !important;
+header {
+  color: white !important;
+  background-color: #333 !important;
 }
 
-
-.carousel-item img
-{
-	width: 100%;
-	height: 500px;
+header a:hover {
+  color: white !important;
 }
 
-.versiculo
-{
-    padding: 2%;
+.carousel-item img {
+  width: 100%;
+  height: 500px;
 }
 
-footer, footer a
-{
-    color: white !important;
+.versiculo {
+  padding: 2%;
 }
 
-footer
-{
-    background-color: #333 !important;
+footer,
+footer a {
+  color: white !important;
 }
 
-hr
-{
-    background-color: #6351ce;
+footer {
+  background-color: #333 !important;
 }
 
-.container-padding
-{
-    padding: 4% 2% 2% 2%;
+hr {
+  background-color: #6351ce;
 }
 
-.logo-bank
-{
-    width: 10%;
-    height: 50px;
+.container-padding {
+  padding: 4% 2% 2% 2%;
 }
 
-
-.map-container-5
-{
-    overflow: hidden;
-    padding: 1%;
-    position: relative;
-    height: 0;
+.logo-bank {
+  width: 10%;
+  height: 50px;
 }
 
-.map-container-5 iframe
-{
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
+.map-container-5 {
+  overflow: hidden;
+  padding: 1%;
+  position: relative;
+  height: 0;
 }
 
-.row
-{
-    margin: 0 2% 0 2% !important;
+.map-container-5 iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
-
-/* countdown style */
-/*
-
-#countdown
-{
-    font-family: sans-serif;
-    font-size: 4vw;
+.row {
+  margin: 0 2% 0 2% !important;
 }
 
-#countdown div
-{
-    background-color: white;
-    color: #6351ce;
-    border-radius: 12%;
-    padding: 1%;
-    margin-bottom: 1%;
+#counter div {
+  border-radius: 4% !important;
 }
 
-*/
-
-#countdown div
-{
-    border-radius: 4% !important;
+#counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 3vw;
 }
 
-#countdown
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    font-size: 3vw;
-   
-
+.labels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  font-family: "Kaushan Script";
 }
 
-.labels
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 50%;
-    font-family: 'Kaushan Script';
+.labels div {
+  padding: 2%;
+  margin: 2%;
 }
 
-.labels div
-{
-    padding: 2%;
-    margin: 2%;
+.placar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2%;
+  width: 50%;
 }
 
-.placar
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-   
-    padding: 2%;
-    width: 50%;
+.numbers {
+  background-color: white;
+  color: #6351ce;
+  border-style: solid;
+  border-color: #6351ce;
+  padding: 2%;
 }
 
-.numbers
-{
-    background-color: white;
-    color: #6351ce;
-    border-style: solid;
-    border-color: #6351ce;
-    padding: 2%;
+.colon {
+  color: #6351ce;
+  padding: 2%;
+  font-weight: bold;
 }
-
-.colon
-{
-    color: #6351ce;
-    padding: 2%;
-    font-weight: bold;
-}
-
 
 /* import fonts google */
 
-@font-face 
-{ 
-	font-family: 'Kaushan Script'; 
-	src: url('../fonts/Kaushan_Script/KaushanScript-Regular.ttf'); 
+@font-face {
+  font-family: "Kaushan Script";
+  src: url("../fonts/Kaushan_Script/KaushanScript-Regular.ttf");
 }
