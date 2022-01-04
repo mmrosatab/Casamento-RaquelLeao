@@ -88,19 +88,7 @@ hr {
   align-items: center;
   align-content: center;
   font-size: 3vw;
-}
-
-.labels {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 50%;
-  font-family: "Kaushan Script";
-}
-
-.labels div {
-  padding: 2%;
-  margin: 2%;
+  width: 100%;
 }
 
 .placar {
@@ -113,7 +101,25 @@ hr {
   width: 50%;
 }
 
+.placar2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2%;
+  width: 100%;
+}
+
 .numbers {
+  background-color: white;
+  color: #6351ce;
+  border-style: solid;
+  border-color: #6351ce;
+  padding: 4%;
+}
+
+.numbers2 {
   background-color: white;
   color: #6351ce;
   border-style: solid;
@@ -121,9 +127,31 @@ hr {
   padding: 2%;
 }
 
+.labels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  font-family: "Kaushan Script";
+}
+
+.labels div {
+  padding: 1%;
+  margin: 2%;
+}
+
+.labels2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-family: "Kaushan Script";
+  margin-bottom: 2%;
+}
+
 .colon {
   color: #6351ce;
-  padding: 2%;
+  padding: 1%;
   font-weight: bold;
 }
 
