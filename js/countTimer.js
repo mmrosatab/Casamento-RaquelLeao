@@ -1,17 +1,16 @@
 const marriedDate = new Date("2019-12-07T19:00:00-03:00");
-// const marriedDate = new Date("2022-01-04T19:00:00-03:00");
 
 const timing = setInterval(function () {
-  let currentDate = new Date().getTime(); //same thing as above
-  let timeLeft = marriedDate - currentDate; //difference between time you set and now in miliseconds
+  let currentDate = new Date().getTime();
+  let timeLeft = marriedDate - currentDate;
+  let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-  let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24)); //conversion miliseconds on days
-  if (days < 10) days = "0" + days; //if number of days is below 10, programm is writing "0" before 9, that's why you see "09" instead of "9"
-  let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); //conversion miliseconds on hours
+  if (days < 10) days = "0" + days;
   if (hours < 10) hours = "0" + hours;
-  let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60)); //conversion miliseconds on minutes
   if (minutes < 10) minutes = "0" + minutes;
-  let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000); //conversion miliseconds on seconds
   if (seconds < 10) seconds = "0" + seconds;
 
   document.getElementById("counter-title").innerHTML =
@@ -45,19 +44,28 @@ const timing = setInterval(function () {
   if (timeLeft <= 0) {
     let accumulatedTime = currentDate - marriedDate;
 
-    let years = Math.floor(accumulatedTime / (1000 * 60 * 60 * 24 * 365));
-    let months = Math.floor(accumulatedTime / (1000 * 60 * 60 * 24 * 30.5));
-    months = months % 12 > 10 ? months : 0;
-
-    days = Math.floor(accumulatedTime / (1000 * 60 * 60 * 24));
-    if (days < 10) days = "0" + days;
-    hours = Math.floor(
-      (accumulatedTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    let years = Math.floor(accumulatedTime / (365 * 24 * 60 * 60 * 1000));
+    let months = Math.floor(
+      (accumulatedTime % (365 * 24 * 60 * 60 * 1000)) /
+        (30 * 24 * 60 * 60 * 1000)
     );
+
+    days = Math.floor(
+      (accumulatedTime % (30 * 24 * 60 * 60 * 1000)) / (24 * 60 * 60 * 1000)
+    );
+
+    hours = Math.floor(
+      (accumulatedTime % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000)
+    );
+
+    minutes = Math.floor((accumulatedTime % (60 * 60 * 1000)) / (60 * 1000));
+    seconds = Math.floor((accumulatedTime % (60 * 1000)) / 1000);
+
+    if (years < 10) years = "0" + years;
+    if (months < 10) months = "0" + months;
+    if (days < 10) days = "0" + days;
     if (hours < 10) hours = "0" + hours;
-    minutes = Math.floor((accumulatedTime % (1000 * 60 * 60)) / (1000 * 60));
     if (minutes < 10) minutes = "0" + minutes;
-    seconds = Math.floor((accumulatedTime % (1000 * 60)) / 1000);
     if (seconds < 10) seconds = "0" + seconds;
 
     document.getElementById("counter-title").innerHTML =

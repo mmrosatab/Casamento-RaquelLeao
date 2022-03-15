@@ -144,9 +144,9 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  width: 95%;
   font-family: "Kaushan Script";
-  margin-bottom: 2%;
+  margin: 2% 3% 2% 0;
 }
 
 .colon {
