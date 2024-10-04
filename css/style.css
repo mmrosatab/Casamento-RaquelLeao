@@ -29,8 +29,32 @@ header a:hover {
 
 .carousel-item img {
   width: 100%;
-  height: 500px;
+  height: 600px;
 }
+
+
+@media (min-width: 200px) and (max-width: 768px)
+{
+  .carousel-item img {
+    height: 400px;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1440px)
+{
+  .carousel-item img {
+    height: 500px;
+  }
+}
+
+@media (min-width: 1441px)
+{
+  .carousel-item img {
+    height: 900px;
+  }
+}
+
 
 .versiculo {
   padding: 2%;
