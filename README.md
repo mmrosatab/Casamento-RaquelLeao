@@ -1,6 +1,6 @@
 # Raquels-Marriage
 
-This application was developed for to show informations about Raquel's Marriage. For the development was used html, css, js and Bootstrap 4.
+This application was developed to show information about Raquel's marriage. For the development, HTML, CSS, JavaScript, and Bootstrap 4 were used.
 
 You can use this application here: https://raquels-marriage.vercel.app
 
